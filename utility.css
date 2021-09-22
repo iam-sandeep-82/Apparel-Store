@@ -1,0 +1,41 @@
+*{
+  box-sizing:border-box;
+}
+
+.mr{
+  margin-right: 6rem !important;
+}
+.ml{
+  margin-left: 6rem !important;
+}
+
+.btn-hover{
+  background:black;
+}
+
+.btn-hover:hover{
+  background:white; color:rgb(7, 218, 255);
+  transition: all 500ms ease-out;
+  border:solid 1px black; color:black;
+}
+
+.bg-black{
+  background-color:black;
+}
+.bg-white{
+  background-color:white;
+}
+
+.vw-30{
+  width:30%;
+}
+.vw-60{
+  width:60%;
+}
+.vw-90{
+  width:90%;
+}
+
+.top-35{
+  top:35%;
+}

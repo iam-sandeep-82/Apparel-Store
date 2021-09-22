@@ -1,0 +1,16 @@
+/* header css */
+header .navigation-wrapper{
+  z-index:2;
+}
+header .navigation-wrapper .navigation-menu{
+  min-width:25vw;
+  width:32vw;
+}
+
+header .navigation-wrapper .navigation-menu ul li a{
+  font-size:1.1rem; color:white; font-family:'raleway'; font-weight:400;
+}
+
+header .navigation-wrapper .image-wrapper .container .row{
+  z-index:5;
+}

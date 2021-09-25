@@ -1,6 +1,8 @@
 body{
-  font-family:'raleway'
+  font-family:'raleway';
+  background: :white;;
 }
+
 
 .image-wrapper{
   background: url(./images/new-landing-image.jpg) center center/cover no-repeat; 

@@ -9,14 +9,21 @@
   margin-left: 6rem !important;
 }
 
-.btn-hover{
-  background:black;
+
+.btn{
+  border:6px; color:white; background:black;
 }
 
-.btn-hover:hover{
-  background:white; color:rgb(7, 218, 255);
-  transition: all 500ms ease-out;
-  border:solid 1px black; color:black;
+.btn-hover{
+  background:black;
+  color:white;
+}
+
+.btn-hover:hover,
+.btn-hover:active{
+  background:white; color:black;
+  transition: all 250ms ease-out;
+  border:solid 1px black; 
 }
 
 .bg-black{
@@ -40,18 +47,31 @@
   top:35%;
 }
 
+.w-5{
+  width:5%;
+}
 .w-10{
   width:10%;
 }
 .w-15{
   width:15%;
 }
-.w-5{
-  width:5%;
-}
 .w-30{
   width:30%;
 }
 .w-40{
   width:40%;
+}
+.w-90{
+  width:90%;
+}
+
+.min-vh-80{
+  min-height:80vh;
+}
+
+.round-border{
+  border:solid 0.5px rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  border-right:solid 1px white;
 }

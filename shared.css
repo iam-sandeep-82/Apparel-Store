@@ -1,7 +1,24 @@
 /* header css */
-header .navigation-wrapper{
-  z-index:2;
+
+
+nav.navigation{
+  position:fixed; top:0; left:0; z-index:100; transition:250ms ease-out;
 }
+
+nav.navigation .navigation-wrapper{background:#fff;}
+
+.black-me{
+  background:rgb(24, 24, 24);
+}
+
+.nav--hidden{
+  transform:translateY(-150px);
+  transition:250ms ease-out;
+}
+
+/* header .navigation-wrapper{
+  z-index:2;
+} */
 header .navigation-wrapper .navigation-menu{
   min-width:25vw;
   width:32vw;
@@ -11,6 +28,6 @@ header .navigation-wrapper .navigation-menu ul li a{
   font-size:1.1rem; color:white; font-family:'raleway'; font-weight:400;
 }
 
-header .navigation-wrapper .image-wrapper .container .row{
+/* header .navigation-wrapper .image-wrapper .container .row{
   z-index:5;
-}
+} */

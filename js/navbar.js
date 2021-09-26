@@ -5,16 +5,25 @@ var nav_wrapper=document.querySelector(".navigation-wrapper")
 let lastScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
+  if (window.scrollY == 0) {
+    nav_wrapper.style.background='';
+
+  } 
+  else  {
+    nav_wrapper.style.background='white';
+  } 
+
   if (lastScrollY < window.scrollY) {
     nav.classList.add("nav--hidden");
-    nav_wrapper.classList.add('black-me');
-
-  } else {
+    
+  } 
+  else {
     nav.classList.remove("nav--hidden");
-    nav_wrapper.classList.remove('black-me');
+    
   }
-
+ 
   lastScrollY = window.scrollY;
 });
+
 
 

@@ -5,7 +5,9 @@ nav.navigation{
   position:fixed; top:0; left:0; z-index:100; transition:220ms ease-out;
 }
 
-nav.navigation .navigation-wrapper{background:#fff; }
+nav.navigation .navigation-wrapper{background:rgba(255, 255, 255, 0.15); padding:24px; transition: 350ms ease-out;}
+
+
 
 .black-me{
   background:rgb(24, 24, 24);
@@ -28,6 +30,30 @@ header .navigation-wrapper .navigation-menu ul li a{
   font-size:1.1rem; color:white; font-family:'raleway'; font-weight:400;
 }
 
+header .navigation-wrapper .logo-wrapper .vertical-border{
+  min-height:40px; width:0.75px; background:black;
+}
+
+nav.navigation .navigation-wrapper .logo-wrapper .img-handler{
+  width:10%;
+}
+
 /* header .navigation-wrapper .image-wrapper .container .row{
   z-index:5;
 } */
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  nav.navigation .navigation-wrapper{background:rgb(255, 255, 255); padding:8px; transition: all 350ms ease-out;
+  animation: fade-in 450ms forwards;
+  };
+
+  @keyframes fade-ind {
+    0%{opacity:0};
+    100%{opacity:1};
+  }
+
+  nav.navigation .navigation-wrapper .logo-wrapper .img-handler{
+    width:18%;
+  }
+}

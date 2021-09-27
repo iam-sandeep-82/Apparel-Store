@@ -7,7 +7,7 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (window.scrollY == 0) {
     nav_wrapper.style.background='';
-
+    
   } 
   else  {
     nav_wrapper.style.background='white';

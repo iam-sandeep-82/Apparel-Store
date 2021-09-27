@@ -35,8 +35,26 @@ header .navigation-wrapper .logo-wrapper .vertical-border{
 }
 
 nav.navigation .navigation-wrapper .logo-wrapper .img-handler{
-  width:10%;
+  width:8%;
 }
+
+header .navigation-wrapper .logo-wrapper .horse-hoof{
+  color:black;
+}
+
+form#customer-feedback input:focus,
+form#customer-feedback input:active,
+form#customer-feedback textarea:focus,
+form#customer-feedback textarea:active{
+  box-shadow: none; 
+  outline:rgba(0,0,0,0.5); background:none; border-color:var(--charcoal);
+} 
+
+
+/* customer-feedback-form-css */
+
+
+
 
 /* header .navigation-wrapper .image-wrapper .container .row{
   z-index:5;

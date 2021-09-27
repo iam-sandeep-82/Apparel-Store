@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Animate-On-Scroll CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -29,7 +32,7 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <title>INDEX</title>
+    <title>HORSE-HOOF</title>
 
 
 
@@ -41,17 +44,18 @@
 
   </head>
 
-  <body>
+  <body id='home'>
 
     <header>
-      <nav class="navigation w-100">
+      <nav class="navigation w-100 shadow-lg">
         <div class="navigation-wrapper container-fluid m-0 d-flex align-items-center justify-content-between text-black text-center">
           <div class="logo-wrapper w-md-30 w-60 d-flex align-items-center justify-content-around">
             <div class="img-handler order-md-2">
-              <img src="./images/horse_hoof_icon.png" alt="" srcset="" class="" style="height:100%; width:100%;"> 
+              <a href="#home"><img src="./images/horse_hoof_icon.png" alt="" srcset="" class="" style="height:100%; width:100%;"></a>
             </div>
             <div class="d-block d-sm-none border-end vertical-border bg-dark"></div>
-            <h4 class="m-0 order-md-1">HORSE-HOOF</h4>
+            <a href="#home" class="horse-hoof text-decoration-none hvr hvr-underline-from-center"><h4 class="m-0 order-md-1">HORSE-HOOF</h4>
+            </a>
           </div>
           <div class="navigation-menu m-0 p-0 vw-50 d-none d-sm-block">
             <ul class="list-unstyled p-0 m-0 d-flex align-items-center justify-content-around">
@@ -74,7 +78,7 @@
               <h1 class="text-white">THE FUTURE OF RETAIL IS HERE.</h1>
             </div>
 
-            <div class="col-10 col-md-12 my-1 m-md-0 p-0 bio">
+            <div class="col-11 col-md-12 my-1 m-md-0 p-0 bio">
               <h6 class="text-white display">Discover the safest self-driving experience with Autono.</h6>
             </div>
           </div>
@@ -95,7 +99,7 @@
             </aside>
           </div>
 
-          <div class="col-md-4 p-0 m-0 ">
+          <div class="col-md-4 p-0 m-0" data-aos="zoom-out" data-aos-duration="1300">
             <img src="./images/wardrobe.jpg" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
           </div>
 
@@ -105,7 +109,7 @@
       <section class="second-section mt-5 bg-black">
         <div class="row m-0 vw-100 min-vh-100  border-warning align-items-center justify-content-between lh-lg">
 
-          <div class="banner col-md-4 p-0 m-0">
+          <div class="banner col-md-4 p-0 m-0" data-aos="zoom-out" data-aos-duration="1300">
             <img src="./images/bg_image.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
           </div>
 
@@ -130,7 +134,7 @@
             </aside>
           </div>
 
-          <div class="col-md-4 p-0 m-0">
+          <div class="col-md-4 p-0 m-0" data-aos="zoom-out" data-aos-duration="1300">
             <img src="./images/bg_image.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
           </div>
 
@@ -148,10 +152,96 @@
 
 
 
-    <footer></footer>
+    <footer>
+      <section class="footer min-vh-100 bg-white">
+        <div class="container pt-5 border-primary">
+
+          <div class="row d-none d-sm-block">
+            <div class="col-12 text-start">
+              <h5 class="text-black"><a href="#home" class="text-decoration-none text-black hvr hvr-underline-from-center">HORSE-HOOF</a></h5>
+            </div>
+          </div>
+
+          <div class="row mt-4 align-items-center justify-content-between">
+
+            <div class="col-sm-12 text-start py-3 charcoal-border ">
+              <div class="row text-black">
+                <h1 class="feedback-title text-center text-sm-start fw-normal"></h1>
+              </div>
+
+              <div class="row py-2">
+                <form action="#" id="customer-feedback">
+                  <div class="row">
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput" class="form-label text-charcoal">First Name</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" >
+                    </div>
+
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput" class="form-label text-charcoal">Last Name</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" >
+                    </div>
+                  </div>
+                  
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label text-charcoal">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" >
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label text-charcoal">Your Feedback</label>
+                    <textarea name="" id="formGroupExampleInput" class="form-control" cols="30" rows="6" placeholder="Share your feeback or experience at here..."></textarea>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn hvr hvr-float-shadow text-white">Thankyou, Submit</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-us mt-5">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-around">
+                <h3 class="">Link</h3>
+                <h3 class="">Link</h3>
+                <h3 class="">Link</h3>
+              </div>
+
+              <div class="col-12 my-3 d-flex flex-row align-items-center justify-content-center">
+                <div class="row social-icons w-50">
+                  <ul class="list-unstyled m-0 d-flex align-items-center justify-content-around">
+                    <li><a href="#"><i class="fab fa-instagram fa-2x text-black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook fa-2x text-black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin fa-2x text-black"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-2x text-black"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex align-items-center justify-content-center">
+                <h6 class="text-center">© 2023 by Horse-Hoof. Proudly created by Team <a href="#home text-decoration-none">Horse-Hoof.</a>
+                </h6>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </footer>
 
     <script src="./js/navbar.js"></script>
-
+    <script src="./js/typewriter_src/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
   </body>
 
   </html>

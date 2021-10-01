@@ -16,7 +16,7 @@
 
     <!-- Google Fonts CDN -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500&Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet">
 
     <!-- Bootstrap CSS -->
@@ -53,8 +53,9 @@
   <body id='home'>
 
     <header>
-      <nav class="navigation w-100 shadow-lg">
-        <div class="navigation-wrapper container-fluid m-0 d-flex align-items-center justify-content-between text-black text-center">
+      <nav class="navigation container-fluid m-0 p-0 shadow-lg">
+        <div class="navigation-wrapper m-0 d-flex align-items-center justify-content-between text-black text-center">
+          <!-- NAVIGATION FOR LARGER SCREEN -->
           <div class="logo-wrapper w-md-30 w-60 d-flex align-items-center justify-content-around">
             <div class="img-handler order-md-2">
               <a href="#home"><img src="./images/horse_hoof_icon.png" alt="" srcset="" class="" style="height:100%; width:100%;"></a>
@@ -64,7 +65,7 @@
             </a>
           </div>
           
-          <div class="navigation-menu__large-screen m-0 p-0 vw-50 d-none d-sm-block">
+          <div class="navigation-menu__large-screen mx-5 p-0 w-25 d-none d-sm-block">
             <ul class="list-unstyled p-0 m-0 d-flex align-items-center justify-content-around">
               <li><a href="#" class="px-3 py-1 btn  text-decoration-none">About</a></li>
               <li><a href="#" class="px-3 py-1 btn  text-decoration-none ">Contact</a></li>
@@ -72,18 +73,19 @@
             </ul>
           </div>
 
-          <div class="navigation-menu__small-screen mx-3 d-block d-sm-none">
+          <!-- NAVIGATION FOR SMALLER SCREEN -->
+          <div class="navigation-menu__small-screen d-block d-sm-none">
             <div class="menu-container" onclick="myFunction(this)">
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
             </div>
 
-            <nav class="navigation-content hide-me position-fixed top-10 start-0 bg-white">
-              <ul class="min-vw-100 min-vh-100 list-unstyled m-0 p-0 d-flex flex-column align-items-center justify-content-center border">
-                <li><a class="action hvr hvr-underline-from-center p-3 text-decoration-none text-black">Home</a></li>
-                <li><a class="action hvr hvr-underline-from-center p-3 text-decoration-none text-black">About</a></li>
-                <li><a class="action hvr hvr-underline-from-center p-3 text-decoration-none text-black">Contact</a></li>
+            <nav class="navigation-content hide-me min-vh-100 min-vw-100 d-flex flex-column align-items-center justify-content-center">
+              <ul class="list-unstyled m-0 p-0 w-100 h-100">
+                <li><a class="action hvr hvr-underline-from-center p-3 text-decoration-none text-black border-bottom border-2 border-dark">Home</a></li>
+                <li><a class="action hvr hvr-underline-from-center p-3 text-decoration-none text-black border-bottom border-2 border-dark">About</a></li>
+                <li><a class="action hvr hvr-underline-from-center p-3 text-decoration-none text-black border-bottom border-2 border-dark">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -119,12 +121,12 @@
 
           <div class="col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1300">
             <aside class="container w-90 border-start lh-lg">
-              <h1 class="mb-5">VISION</h1>
-              <h3 class="my-5 lh-base">We are on the mission to provide products with the best quality, style, and best consumer experience to the consumers in the offline market through our brand. <br><br> Empowering the local retail merchants to stand in this rapidly changing environment by providing them high quality, better costing, and most importantly Marketing, and technology support</h3>
+              <h1 class="mb-5 section-title">VISION</h1>
+              <h3 class="my-5 section-desc lh-base">We are on the mission to provide products with the best quality, style, and best consumer experience to the consumers in the offline market through our brand. <br><br> Empowering the local retail merchants to stand in this rapidly changing environment by providing them high quality, better costing, and most importantly Marketing, and technology support</h3>
             </aside>
           </div>
 
-          <div class="col-md-4 p-0 m-0" data-aos="zoom-in" data-aos-duration="1300">
+          <div class="col-md-4 p-0 m-0">
             <img src="./images/wardrobe.jpg" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
           </div>
 
@@ -134,14 +136,14 @@
       <section class="second-section mt-2 bg-black">
         <div class="row m-0 vw-100 min-vh-100  border-warning align-items-center justify-content-between lh-lg">
 
-          <div class="banner col-md-4 p-0 m-0"  data-aos="zoom-in" data-aos-duration="1300">
+          <div class="banner col-md-4 p-0 m-0">
             <img src="./images/bg_image.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
           </div>
 
           <div class="describe col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center"  data-aos="fade-right" data-aos-duration="1300">
             <aside class="container w-90 border-start">
-              <h1 class="mb-5">High standard  manufacturing and designing.</h1>
-              <h3 class="my-5 lh-base">We manufacture our products into the state of the art factories and follow international standards in manufacturing process which makes our product free from defects and stand at the top in terms of quality. <br><br> Products are design by the professionals and experienced designers who understand the market needs and fashion trends very well and are expert in there work</h3>
+              <h1 class="mb-5 section-title">High Standard Manufacturing and Designing.</h1>
+              <h3 class="my-5 lh-base section-desc">We manufacture our products into the state of the art factories and follow international standards in manufacturing process which makes our product free from defects and stand at the top in terms of quality. <br><br> Products are design by the professionals and experienced designers who understand the market needs and fashion trends very well and are expert in there work</h3>
             </aside>
           </div>
         </div>
@@ -149,21 +151,72 @@
 
       <section class="third-section mt-2 bg-black">
         <div class="row m-0 vw-100 min-vh-100  border-warning align-items-center justify-content-between lh-lg">
-
-          <div class="col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1300">
+          <div class="describe col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1300">
             <aside class="container w-90 border-start">
-              <h1 class="mb-5">Marketing & Branding</h1>
-              <h3 class="my-5 lh-base">We as Horse Hoof totally understand the value which gets added to a product when it is Branded& Correctly Marketed to the right people. <br><br> So we do take care of all the Marketing and brand building for making sure that consumers see & feel the trust and brand value in us and our products. <br><br> All of the benefits of best-in-class quality, superb marketing, brand value, and consumer trust are passed on to the retailers who are linked with the Horse Hoof brand.
+              <h1 class="mb-5 section-title">Marketing & Branding</h1>
+              <h3 class="my-5 lh-base section-desc">We as Horse Hoof totally understand the value which gets added to a product when it is Branded& Correctly Marketed to the right people. <br><br> So we do take care of all the Marketing and brand building for making sure that consumers see & feel the trust and brand value in us and our products. <br><br> All of the benefits of best-in-class quality, superb marketing, brand value, and consumer trust are passed on to the retailers who are linked with the Horse Hoof brand.
               </h3>
 
             </aside>
           </div>
 
-          <div class="col-md-4 p-0 m-0" data-aos="zoom-in" data-aos-duration="1300">
+          <div class="banner col-md-4 p-0 m-0">
             <img src="./images/bg_image.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
           </div>
+        </div>
+      </section>
 
+      <section class="fourth-section mt-2 bg-black">
+        <div class="row m-0 vw-100 min-vh-100  border-warning align-items-center justify-content-between lh-lg">
 
+          <div class="banner col-md-4 p-0 m-0">
+            <img src="./images/image-3.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
+          </div>
+
+          <div class="describe col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1300">
+            <aside class="container w-90 border-start">
+              <h1 class="mb-5 section-title">Everything to ensure a Great Consumer Experience</h1>
+              <h3 class="my-5 lh-base section-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptas aspernatur, sapiente animi ut assumenda qui? Quibusdam magnam aspernatur beatae?<br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, blanditiis!</h3>
+            </aside>
+          </div>
+          
+        </div>
+      </section>
+      
+
+      <section class="fifth-section mt-2 bg-black">
+        <div class="row m-0 vw-100 min-vh-100  border-warning align-items-center justify-content-between lh-lg">
+
+          <div class="describe col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1300">
+            <aside class="container w-90 border-start">
+              <h1 class="mb-5 section-title">Technology Support</h1>
+              <h3 class="my-5 lh-base section-desc">It is our responsibility to make our partners totally equipped with the latest technology.<br><br>
+                we will provide you technology support for making your store all ready will provide you all technology required for making your store not only stand out in the crowd but also to make your store advance in this technology dependent world which will surely help you with small things which take more of your time like billing, inventory management etc, which will save your time and allow you focus on the other important parts of your business to improve and grow your store.</h3>
+            </aside>
+          </div>
+
+          <div class="banner col-md-4 p-0 m-0">
+            <img src="./images/image-4.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
+          </div>
+          
+        </div>
+      </section>
+      
+
+      <section class="sixth-section mt-2 bg-black">
+        <div class="row m-0 vw-100 min-vh-100  border-warning align-items-center justify-content-between lh-lg">
+          
+          <div class="banner col-md-4 p-0 m-0">
+            <img src="./images/image-5.webp" alt="" srcset="" class="img-fluid" style="height:100%; width:100%;">
+          </div>
+
+          <div class="describe col-md-8 p-3 text-white min-vh-80 d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-duration="1300">
+            <aside class="container w-90 border-start">
+              <h1 class="mb-5 section-title">Commitment to Support in any Condition</h1>
+              <h3 class="my-5 lh-base section-desc">We are here 24x 7 to provide support to the consumers to help them with any issue regarding products& service experience.<br><br>For us, retailers are the most important factor in our system. Who helps us deliver this experience to the consumers. We believe that it's our responsibility to take care of every challenge they face and make sure their business grows with us.<br><br>For that, we are here with a special Dedicated and expert support team for the retailers to help them with everything.</h3>
+            </aside>
+          </div>
+          
         </div>
       </section>
       

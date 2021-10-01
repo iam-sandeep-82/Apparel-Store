@@ -5,12 +5,14 @@
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
+  position: relative;
+  z-index:1001;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 4px) ;
-  transform: rotate(-45deg) translate(-10px, 0px) ;
+  -webkit-transform: rotate(-45deg) translate(-6px, 4px) ;
+  transform: rotate(-45deg) translate(-6px, 0px) ;
 }
 
 /* Fade out the second bar */
@@ -20,8 +22,8 @@
 
 /* Rotate last bar */
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+  -webkit-transform: rotate(45deg) translate(-12px, -8px) ;
+  transform: rotate(45deg) translate(-12px, -8px) ;
 }
 
 /*  */
@@ -35,12 +37,22 @@
   z-index:100;
 }
 .navigation-menu__small-screen  nav{
+  position: fixed; top:0; left:0;
   z-index:1000;
+}
+.navigation-menu__small-screen  nav.navigation-content{
+ background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.65), rgba(221, 221, 221, 1), rgba(255, 255, 255, 0.65));
 }
 
 .show-me{
   display:block;
+  animation:fade-from-top 350ms ease-out;
+}
+
+@keyframes fade-from-top {
+  0%{transform:translateY(-500px);}
+  100%{transform:translateY(0px);}
 }
 .hide-me{
-  display:none;
+  display:none !important;
 }

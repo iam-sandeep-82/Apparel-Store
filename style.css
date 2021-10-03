@@ -1,7 +1,8 @@
 body{
-  font-family:'raleway';
+  font-family:'Questrial';
   background: white;
 }
+
 
 
 .image-wrapper{
@@ -22,15 +23,19 @@ body{
   width:60vw; height:50vh;
 }
 
-.image-wrapper .headline h1{font-size:4rem; font-weight: 400; font-family:'raleway'}
+.image-wrapper .headline h1{font-size:4rem; font-weight: 400; font-family:'Questrial'}
 .image-wrapper .bio h6{ font-size:1.8rem;font-weight: 400; font-family:'raleway'}
 
 
 section h1.section-title{
-  font-family:'playfair'; font-size:3rem; font-weight:500;
+  font-family:'Questrial'; font-size:3rem;
 }
 section h3.section-desc{
   font-family:'raleway'; font-size:1.5rem; font-weight:300;
+}
+
+footer .social-icons .icon{
+  font-size:1.5rem;
 }
 
 /* TABLET */

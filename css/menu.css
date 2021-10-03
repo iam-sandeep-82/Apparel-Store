@@ -36,13 +36,25 @@
 .navigation-menu__small-screen{
   z-index:100;
 }
+
+nav .navigation-wrapper{
+  z-index:1010;
+}
+
 .navigation-menu__small-screen  nav{
   position: fixed; top:0; left:0;
-  z-index:1000;
+  z-index:1010;
 }
+
 .navigation-menu__small-screen  nav.navigation-content{
- background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.65), rgba(221, 221, 221, 1), rgba(255, 255, 255, 0.65));
+ background-image:linear-gradient(to bottom, #fff, rgba(221, 221, 221, 0.815), rgba(255, 255, 255, 0.715));
+ z-index:999;
 }
+
+/* .navigation-menu__small-screen  nav.navigation-content{
+ background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.65), rgba(221, 221, 221, 1), rgba(255, 255, 255, 0.65));
+ z-index:999;
+} */
 
 .show-me{
   display:block;

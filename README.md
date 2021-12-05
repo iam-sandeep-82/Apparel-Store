@@ -1,4 +1,4 @@
-## Horse-Hoof Online Mens Apparel store.
+##  Horse-Hoof a Static website for Online Apparel store.
 
 ## Tools and Technologies
 

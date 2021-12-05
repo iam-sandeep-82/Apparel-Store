@@ -13,7 +13,7 @@
 ## Interface Designs
 
 ### Homepage
-![](https://github.com/thisissandy/Horse-Hoof/blob/master/Interface/1.PNG"")
+![](https://github.com/thisissandy/Horse-Hoof/blob/master/Interface/1.PNG "")
 
 ***
 

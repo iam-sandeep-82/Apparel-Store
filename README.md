@@ -33,5 +33,5 @@
 ***
 
 ### Section Description (*Small Screens Responsive*)
-![](https://github.com/thisissandy/Horse-Hoof/blob/master/Interface/Capture.PNG "")
+![](https://github.com/thisissandy/Horse-Hoof/blob/master/Interface/8.PNG "")
 
